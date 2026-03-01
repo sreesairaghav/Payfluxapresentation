@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PayFluxa – Enterprise Proposal</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<style>
+body {font-family: 'Inter', sans-serif; background: linear-gradient(135deg,#0b1c2d,#0f2a44);} 
+.glass {background: rgba(255,255,255,0.05); backdrop-filter: blur(16px); border:1px solid rgba(255,255,255,0.1);} 
+.glow {box-shadow: 0 0 30px rgba(31,111,235,0.35);} 
+.card{cursor:pointer; transition:0.4s;}
+.card:hover{transform:translateY(-6px);} 
+.hidden-content{display:none;}
+</style>
+</head>
+<body class="text-white scroll-smooth">
+
+<nav class="fixed w-full glass px-10 py-4 flex justify-between items-center z-50">
+<div class="flex items-center gap-3">
+<img src="pic.png" class="h-10 w-10 object-contain" />
+<h1 class="text-2xl font-bold text-blue-400">PayFluxa</h1>
+</div>
+<div class="space-x-8 text-sm">
+<a href="#architecture">Architecture</a>
+<a href="#security">Security</a>
+<a href="#risk">Risk & Compliance</a>
+<a href="#tech">Tech Stack</a>
+</div>
+</nav>
+
+<section class="min-h-screen flex flex-col items-center text-center px-6 pt-32 pb-20 relative overflow-hidden">
+
+<div class="absolute w-[600px] h-[600px] bg-blue-500/20 blur-[140px] rounded-full top-[-150px]"></div>
+<div class="absolute w-[500px] h-[500px] bg-indigo-500/20 blur-[140px] rounded-full bottom-[-120px]"></div>
+
+<div class="h-16"></div>
+<h1 class="text-4xl md:text-5xl font-bold tracking-wide text-blue-400 mt-6">PayFluxa</h1>
+<p class="text-xl mt-4 text-gray-300 max-w-3xl">A Dual‑Layer Financial Resilience & Governance Platform Powering the Shift to <span class="text-blue-400">New‑Gen, Simulation‑Driven Banking</span>.</p>
+
+<div class="grid grid-cols-3 gap-8 mt-14 max-w-5xl w-full">
+
+<div class="glass p-6">
+<h3 class="text-3xl font-bold text-blue-400">500+</h3>
+<p class="text-gray-400 text-sm mt-2">Monte Carlo Simulations per Assessment</p>
+</div>
+
+<div class="glass p-6">
+<h3 class="text-3xl font-bold text-blue-400">AES‑256</h3>
+<p class="text-gray-400 text-sm mt-2">Field‑Level Encryption Standard</p>
+</div>
+
+<div class="glass p-6">
+<h3 class="text-3xl font-bold text-blue-400">100%</h3>
+<p class="text-gray-400 text-sm mt-2">Audit‑Traceable Governance Actions</p>
+</div>
+
+</div>
+
+<div class="grid grid-cols-2 gap-6 mt-12 max-w-4xl w-full text-left">
+
+<div class="glass p-6">
+<h4 class="text-blue-400 font-semibold mb-2">Financial Digital Twin</h4>
+<p class="text-sm text-gray-400">Behavioral income‑expense modeling with forward stress projections.</p>
+</div>
+
+<div class="glass p-6">
+<h4 class="text-blue-400 font-semibold mb-2">Forward Risk Intelligence</h4>
+<p class="text-sm text-gray-400">Distress probability, survivability index & stress timing.</p>
+</div>
+
+<div class="glass p-6">
+<h4 class="text-blue-400 font-semibold mb-2">Governance‑First Lending</h4>
+<p class="text-sm text-gray-400">Multi‑stage approval workflow with override traceability.</p>
+</div>
+
+<div class="glass p-6">
+<h4 class="text-blue-400 font-semibold mb-2">Policy Shock Simulation</h4>
+<p class="text-sm text-gray-400">Repo rate & sectoral income impact on portfolio risk.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ARCHITECTURE -->
+<section id="architecture" class="px-20 py-24">
+<h2 class="text-4xl font-bold mb-16 text-blue-400">Enterprise Architecture</h2>
+<div class="grid grid-cols-3 gap-10 text-center">
+
+<div class="glass p-8 card" onclick="toggle(this)">
+<i data-lucide="users"></i>
+<h3 class="mt-4 font-semibold">Presentation Layer</h3>
+<p class="text-sm text-gray-400">Customer & Bank Applications</p>
+<div class="hidden-content text-left mt-4 text-sm text-gray-300">
+React + TypeScript UI • Role‑based views • Financial dashboard • Governance console interface
+</div>
+</div>
+
+<div class="glass p-8 glow card" onclick="toggle(this)">
+<i data-lucide="cpu"></i>
+<h3 class="mt-4 font-semibold">Application Core</h3>
+<p class="text-sm text-gray-400">FastAPI Services</p>
+<div class="hidden-content text-left mt-4 text-sm text-gray-300">
+Digital Twin Engine • Monte Carlo Risk Simulator • Copilot Advisory Engine • Governance Workflow • RBAC Middleware • Audit Service
+</div>
+</div>
+
+<div class="glass p-8 card" onclick="toggle(this)">
+<i data-lucide="database"></i>
+<h3 class="mt-4 font-semibold">Secure Data Layer</h3>
+<p class="text-sm text-gray-400">PostgreSQL</p>
+<div class="hidden-content text-left mt-4 text-sm text-gray-300">
+Encrypted financial fields • Simulation logs • Consent records • Role tables • Governance actions • Immutable audit trail
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- SECURITY -->
+<section id="security" class="px-20 py-24 bg-[#0a1725]">
+<h2 class="text-4xl font-bold mb-16 text-blue-400">Zero‑Trust Security Architecture</h2>
+<div class="grid grid-cols-3 gap-8">
+
+<div class="glass p-6 card" onclick="toggle(this)">
+<i data-lucide="shield"></i>
+<h3 class="mt-4">JWT Authentication</h3>
+<div class="hidden-content mt-3 text-sm text-gray-300">Stateless authentication with signed tokens and expiry enforcement.</div>
+</div>
+
+<div class="glass p-6 card" onclick="toggle(this)">
+<i data-lucide="lock"></i>
+<h3 class="mt-4">AES‑256 Encryption</h3>
+<div class="hidden-content mt-3 text-sm text-gray-300">Field‑level encryption for sensitive financial and identity data.</div>
+</div>
+
+<div class="glass p-6 card" onclick="toggle(this)">
+<i data-lucide="user-check"></i>
+<h3 class="mt-4">RBAC Control</h3>
+<div class="hidden-content mt-3 text-sm text-gray-300">Strict role‑permission matrix with middleware enforcement.</div>
+</div>
+
+<div class="glass p-6 card" onclick="toggle(this)">
+<i data-lucide="file-text"></i>
+<h3 class="mt-4">Consent Ledger</h3>
+<div class="hidden-content mt-3 text-sm text-gray-300">Customer data access tracked with purpose‑bound consent logging.</div>
+</div>
+
+<div class="glass p-6 card" onclick="toggle(this)">
+<i data-lucide="eye"></i>
+<h3 class="mt-4">Audit Logging</h3>
+<div class="hidden-content mt-3 text-sm text-gray-300">Every privileged action recorded for regulatory traceability.</div>
+</div>
+
+<div class="glass p-6 card" onclick="toggle(this)">
+<i data-lucide="key"></i>
+<h3 class="mt-4">bcrypt Hashing</h3>
+<div class="hidden-content mt-3 text-sm text-gray-300">Salted password hashing for credential protection.</div>
+</div>
+
+</div>
+</section>
+
+<!-- RISK -->
+<section id="risk" class="px-20 py-24">
+<h2 class="text-4xl font-bold mb-16 text-blue-400">Risk & Compliance Matrix</h2>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse glass">
+<thead>
+<tr class="text-blue-400">
+<th class="p-5">Principle</th>
+<th class="p-5">Implementation</th>
+<th class="p-5">Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr class="border-t border-gray-700"><td class="p-5">Responsible Lending</td><td class="p-5">Borrowing Readiness Engine</td><td class="p-5">Pre‑default prevention</td></tr>
+<tr class="border-t border-gray-700"><td class="p-5">Forward Risk</td><td class="p-5">Monte Carlo Simulation</td><td class="p-5">Stress forecasting</td></tr>
+<tr class="border-t border-gray-700"><td class="p-5">Model Governance</td><td class="p-5">Deterministic Runs</td><td class="p-5">Audit reproducibility</td></tr>
+<tr class="border-t border-gray-700"><td class="p-5">Auditability</td><td class="p-5">Full Simulation Logs</td><td class="p-5">Regulatory transparency</td></tr>
+<tr class="border-t border-gray-700"><td class="p-5">Separation of Authority</td><td class="p-5">Dual‑Layer Platform</td><td class="p-5">Governance control</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<!-- TECH STACK -->
+<section id="tech" class="px-20 py-24 bg-[#0a1725]">
+<h2 class="text-4xl font-bold mb-16 text-blue-400">Technology Stack</h2>
+<div class="grid grid-cols-4 gap-10 text-center">
+<div class="glass p-6 card">FastAPI</div>
+<div class="glass p-6 card">PostgreSQL</div>
+<div class="glass p-6 card">NumPy</div>
+<div class="glass p-6 card">SQLAlchemy</div>
+<div class="glass p-6 card">React + TS</div>
+<div class="glass p-6 card">Tailwind</div>
+<div class="glass p-6 card">Recharts</div>
+<div class="glass p-6 card">PyJWT</div>
+</div>
+</section>
+
+<footer class="text-center py-10 text-gray-500">© PayFluxa – Financial Resilience Platform</footer>
+
+<script>
+function toggle(el){
+const content = el.querySelector('.hidden-content');
+content.style.display = content.style.display === 'block' ? 'none' : 'block';
+}
+lucide.createIcons();
+</script>
+
+</body>
+</html>
